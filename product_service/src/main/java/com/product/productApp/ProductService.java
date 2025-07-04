@@ -1,10 +1,11 @@
-package main.java.com.product.product_service;
+package com.product.productApp;
+import java.util.List;
 
 
 public class ProductService {
 
 
-    private List<Products> products;
+    private List<Product> products;
     ProductDB productDB = new ProductDB();
 
 
@@ -23,6 +24,7 @@ public class ProductService {
                 return p;
             }
         }
+        return null;
     }
 
     public List<Product> getAllProducts(){

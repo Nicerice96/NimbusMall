@@ -1,7 +1,8 @@
-package main.java.com.product.product_service;
+package com.product.productApp;
+
 
 public class Product {
-    private enum ProductType{
+    public enum ProductType{
         TECHNOLOGY,
         FOOD,
         CLOTHING,
@@ -45,7 +46,7 @@ public class Product {
     public Product(String productTitle, ProductType productType, int productPrice){
         this.productTitle = productTitle;
         this.productType = productType;
-        this.price = price;
+        this.productPrice = productPrice;
     }
 
 
